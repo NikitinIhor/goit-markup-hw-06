@@ -65,7 +65,7 @@ header {
     display: flex;
     align-items: center;
     height: 56px;
-    border-bottom: 1px solid #e7e9fc;
+    /* border-bottom: 1px solid #e7e9fc; */
     /* box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08); */
 }
 
@@ -329,11 +329,11 @@ header {
     position: relative;
 }
 
-@media (min-resolution: 192dpi) {
+/* @media (min-resolution: 192dpi) {
     .one {
         background-image: url('../images/main-image-320@2x.jpg');
     }
-}
+} */
 
 .title {
     /* max-width: 496px; */
