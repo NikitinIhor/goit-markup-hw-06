@@ -513,12 +513,9 @@ header {
     align-items: baseline;
 }
 
-.footer-left {
-    text-align: center;
-}
-
 .footer-logo {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -542,6 +539,9 @@ header {
     color: rgba(244, 244, 253, 1);
     max-width: 264px;
     text-align: left;
+}
+
+.footer-left {
     margin-bottom: 72px;
 }
 
@@ -897,6 +897,7 @@ header {
 
     .header-container {
         gap: 0;
+        height: 72px;
     }
 
     .burger-menu-btn {
@@ -906,6 +907,7 @@ header {
     nav {
         display: flex;
         align-items: center;
+        margin-right: 122px;
     }
 
     .header-logo {
@@ -915,7 +917,6 @@ header {
     .header-list {
         display: flex;
         gap: 40px;
-        margin-right: 122px;
     }
 
     .link {
@@ -941,7 +942,7 @@ header {
         width: 100%;
         height: 4px;
         left: 0;
-        bottom: 5px;
+        bottom: -1px;
         border-radius: 2px;
         background-color: rgba(64, 75, 191, 1);
     }
@@ -976,7 +977,6 @@ header {
         display: flex;
         flex-direction: column;
         gap: 12px;
-        padding: 16px 0;
         margin: 0;
     }
 
@@ -1007,6 +1007,7 @@ header {
         flex-direction: row;
         flex-wrap: wrap;
         gap: 24px;
+        row-gap: 72px;
     }
 
     .section-two-ul .item {
@@ -1075,18 +1076,8 @@ header {
 
 @media (min-width: 1158px) {
 
-    .header,
-    .one,
-    .two,
-    .tree,
-    .four,
-    .footer {
-        max-width: 1440px;
-        margin: 0 auto;
-    }
-
     .container {
-        min-width: 1170px;
+        max-width: 1158px;
         padding: 0 15px;
     }
 
@@ -1099,16 +1090,12 @@ header {
         display: flex;
     }
 
-    .header-logo {
-        margin-right: 76px;
-    }
-
-    .header-list {
+    .nav {
         margin-right: 332px;
     }
 
-    .link-is-active::after {
-        bottom: -1;
+    .header-logo {
+        margin-right: 76px;
     }
 
     .adress-link {
@@ -1202,10 +1189,12 @@ header {
 
     .footer-left {
         margin-right: 120px;
+        margin-bottom: 0;
     }
 
     .footer-right {
         margin-right: 80px;
+        margin-bottom: 0;
     }
 
 }
