@@ -240,11 +240,11 @@ header {
     position: relative;
 }
 
-/* @media (min-resolution: 192dpi) {
+@media (min-resolution: 192dpi) {
     .one {
-        background-image: url('../images/main-image-320@2x.jpg');
+        background-image: url('../images/main.jpg');
     }
-} */
+}
 
 .title {
     max-width: 216px;
